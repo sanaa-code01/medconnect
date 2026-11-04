@@ -107,6 +107,6 @@ _À ajouter dans `docs/screenshots/`._
 ## Stack
 Java 17 · Jakarta Servlet 6 · JSP / JSTL 3 · Hibernate ORM 6 · MySQL 8 · Tomcat 10.1 · Maven · JUnit 5 · Docker · GitHub Actions · Bootstrap 5 (AdminKit)
 
-## Auteurs
-- **Sanae Daoud** — refonte et version 2 : module hôpital, flux de don complet, sécurité, tests, Docker, CI
-- Version initiale réalisée en binôme avec **Noujoud Ayani** dans le cadre du module JEE (ENSA Agadir, encadrement Mme Benider)
+## Historique
+- **Novembre 2025** — version initiale réalisée en binôme avec Noujoud Ayani (module JEE, ENSA Agadir, encadrement Mme Benider) : https://github.com/noujoudaya/blood-donation-management
+- **Novembre 2026** — version 2 par Sanaa Daoud : module hôpital, flux de don complet, sécurité, tests, Docker, CI
