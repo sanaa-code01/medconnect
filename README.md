@@ -102,7 +102,21 @@ règles du bouton « Je veux donner », parcours complet côté hôpital et prot
 Ils tournent automatiquement à chaque push via **GitHub Actions**, qui construit aussi l'image Docker.
 
 ## Captures d'écran
-_À ajouter dans `docs/screenshots/`._
+
+**Page d'accueil**
+![Page d'accueil](docs/screenshots/jeepic0.JPG)
+
+**Espace hôpital : tableau de bord**
+![Tableau de bord hôpital](docs/screenshots/jeepic2.JPG)
+
+**Espace hôpital : détail d'une demande et réponses des donneurs**
+![Détail d'une demande](docs/screenshots/jeepic3.JPG)
+
+**Espace donneur : demandes compatibles avec son groupe sanguin**
+![Demandes compatibles](docs/screenshots/jeepic5.JPG)
+
+**Espace donneur : tableau de bord**
+![Tableau de bord donneur](docs/screenshots/jeepic4.JPG)
 
 ## Stack
 Java 17 · Jakarta Servlet 6 · JSP / JSTL 3 · Hibernate ORM 6 · MySQL 8 · Tomcat 10.1 · Maven · JUnit 5 · Docker · GitHub Actions · Bootstrap 5 (AdminKit)
