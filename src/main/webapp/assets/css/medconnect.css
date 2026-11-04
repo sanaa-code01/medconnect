@@ -9,8 +9,8 @@
 .btn-mc:hover, .btn-mc:focus { background: var(--mc-red-dark); border-color: var(--mc-red-dark); color: #fff; }
 .text-mc { color: var(--mc-red) !important; }
 
-.stat .stat-icon { font-size: 1.6rem; color: var(--mc-red); }
-.stat .stat-value { font-size: 1.9rem; font-weight: 600; margin: .25rem 0 0; }
+.mc-stat .stat-icon { font-size: 1.6rem; color: var(--mc-red); }
+.mc-stat .stat-value { font-size: 1.9rem; font-weight: 600; margin: .25rem 0 0; }
 .table td, .table th { vertical-align: middle; }
 .badge-groupe { background: #fdecea; color: var(--mc-red); font-weight: 600; font-size: .85rem; }
 .progress { height: .5rem; min-width: 80px; }

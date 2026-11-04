@@ -11,21 +11,21 @@
 
 <div class="row">
     <div class="col-sm-6 col-xl-3">
-        <div class="card stat"><div class="card-body">
+        <div class="card mc-stat"><div class="card-body">
             <span class="stat-icon"><i class="bi bi-droplet"></i></span>
             <h5 class="card-title text-muted mt-2">Groupe sanguin</h5>
             <p class="stat-value">${empty dash.donneur.groupeSanguin ? '—' : dash.donneur.groupeSanguin.label}</p>
         </div></div>
     </div>
     <div class="col-sm-6 col-xl-3">
-        <div class="card stat"><div class="card-body">
+        <div class="card mc-stat"><div class="card-body">
             <span class="stat-icon"><i class="bi bi-heart-pulse"></i></span>
             <h5 class="card-title text-muted mt-2">Dons effectués</h5>
             <p class="stat-value">${dash.totalDons}</p>
         </div></div>
     </div>
     <div class="col-sm-6 col-xl-3">
-        <div class="card stat"><div class="card-body">
+        <div class="card mc-stat"><div class="card-body">
             <span class="stat-icon"><i class="bi bi-calendar-check"></i></span>
             <h5 class="card-title text-muted mt-2">Prochain don possible</h5>
             <p class="stat-value fs-4">
@@ -37,7 +37,7 @@
         </div></div>
     </div>
     <div class="col-sm-6 col-xl-3">
-        <div class="card stat"><div class="card-body">
+        <div class="card mc-stat"><div class="card-body">
             <span class="stat-icon"><i class="bi bi-hourglass-split"></i></span>
             <h5 class="card-title text-muted mt-2">Réponses en cours</h5>
             <p class="stat-value">${dash.reponsesEnAttente}</p>

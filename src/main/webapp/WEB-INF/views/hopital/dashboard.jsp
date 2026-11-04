@@ -7,19 +7,19 @@
 </div>
 
 <div class="row">
-    <div class="col-sm-6 col-xl-3"><div class="card stat"><div class="card-body">
+    <div class="col-sm-6 col-xl-3"><div class="card mc-stat"><div class="card-body">
         <span class="stat-icon"><i class="bi bi-clipboard2-pulse"></i></span>
         <h5 class="card-title text-muted mt-2">Demandes ouvertes</h5><p class="stat-value">${dash.demandesOuvertes}</p>
     </div></div></div>
-    <div class="col-sm-6 col-xl-3"><div class="card stat"><div class="card-body">
+    <div class="col-sm-6 col-xl-3"><div class="card mc-stat"><div class="card-body">
         <span class="stat-icon"><i class="bi bi-exclamation-octagon"></i></span>
         <h5 class="card-title text-muted mt-2">Urgentes ou critiques</h5><p class="stat-value">${dash.demandesUrgentes}</p>
     </div></div></div>
-    <div class="col-sm-6 col-xl-3"><div class="card stat"><div class="card-body">
+    <div class="col-sm-6 col-xl-3"><div class="card mc-stat"><div class="card-body">
         <span class="stat-icon"><i class="bi bi-person-raised-hand"></i></span>
         <h5 class="card-title text-muted mt-2">Donneurs à traiter</h5><p class="stat-value">${dash.reponsesEnAttente}</p>
     </div></div></div>
-    <div class="col-sm-6 col-xl-3"><div class="card stat"><div class="card-body">
+    <div class="col-sm-6 col-xl-3"><div class="card mc-stat"><div class="card-body">
         <span class="stat-icon"><i class="bi bi-droplet-half"></i></span>
         <h5 class="card-title text-muted mt-2">Dons ce mois-ci</h5><p class="stat-value">${dash.donsCeMois}</p>
     </div></div></div>
