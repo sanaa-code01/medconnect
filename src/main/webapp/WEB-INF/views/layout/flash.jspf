@@ -1,0 +1,17 @@
+<c:if test="${not empty sessionScope.flashSuccess}">
+    <div class="alert alert-success" role="alert">
+        <div class="alert-message"><i class="bi bi-check-circle me-2"></i><c:out value="${sessionScope.flashSuccess}"/></div>
+    </div>
+    <c:remove var="flashSuccess" scope="session"/>
+</c:if>
+<c:if test="${not empty sessionScope.flashError}">
+    <div class="alert alert-danger" role="alert">
+        <div class="alert-message"><i class="bi bi-exclamation-triangle me-2"></i><c:out value="${sessionScope.flashError}"/></div>
+    </div>
+    <c:remove var="flashError" scope="session"/>
+</c:if>
+<c:if test="${not empty error}">
+    <div class="alert alert-danger" role="alert">
+        <div class="alert-message"><i class="bi bi-exclamation-triangle me-2"></i><c:out value="${error}"/></div>
+    </div>
+</c:if>

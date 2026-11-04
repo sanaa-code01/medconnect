@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!--
+  Valeurs par défaut pour le développement local.
+  En Docker / production, elles sont remplacées par les variables
+  d'environnement DB_URL, DB_USER, DB_PASSWORD et HBM2DDL (voir HibernateUtil).
+-->
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/medconnect_db?createDatabaseIfNotExist=true&amp;useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC&amp;characterEncoding=UTF-8</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.pool_size">10</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <mapping class="blooddonation.bean.User"/>
+        <mapping class="blooddonation.bean.Donneur"/>
+        <mapping class="blooddonation.bean.Hopital"/>
+        <mapping class="blooddonation.bean.Demande"/>
+        <mapping class="blooddonation.bean.Correspondance"/>
+        <mapping class="blooddonation.bean.Don"/>
+    </session-factory>
+</hibernate-configuration>

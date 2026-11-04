@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration Tomcat : cookie de session SameSite=Strict (défense supplémentaire contre le CSRF) -->
+<Context>
+    <CookieProcessor sameSiteCookies="strict"/>
+</Context>

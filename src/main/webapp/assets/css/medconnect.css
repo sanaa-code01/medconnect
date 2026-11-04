@@ -1,0 +1,32 @@
+/* Personnalisation MedConnect par-dessus AdminKit (Bootstrap 5) */
+:root { --mc-red: #c0392b; --mc-red-dark: #962d22; }
+
+.sidebar-brand { font-size: 1.2rem; }
+.sidebar-logout { padding: 1rem 1.5rem; }
+.sidebar-header { padding-top: 1.25rem; }
+
+.btn-mc { background: var(--mc-red); border-color: var(--mc-red); color: #fff; }
+.btn-mc:hover, .btn-mc:focus { background: var(--mc-red-dark); border-color: var(--mc-red-dark); color: #fff; }
+.text-mc { color: var(--mc-red) !important; }
+
+.stat .stat-icon { font-size: 1.6rem; color: var(--mc-red); }
+.stat .stat-value { font-size: 1.9rem; font-weight: 600; margin: .25rem 0 0; }
+.table td, .table th { vertical-align: middle; }
+.badge-groupe { background: #fdecea; color: var(--mc-red); font-weight: 600; font-size: .85rem; }
+.progress { height: .5rem; min-width: 80px; }
+.inline-form { display: inline; }
+.don-form { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+.don-form input[type=date] { max-width: 150px; }
+.don-form input[type=text] { max-width: 180px; }
+
+/* Pages publiques */
+.public-nav { background: #fff; border-bottom: 1px solid #eee; }
+.hero { background: linear-gradient(rgba(30, 10, 10, .65), rgba(30, 10, 10, .65)), url("../img/image_background.jpeg") center / cover;
+        color: #fff; padding: 6rem 0 5rem; }
+.hero h1 { color: #fff; font-size: 2.6rem; font-weight: 700; }
+.hero p { font-size: 1.15rem; max-width: 640px; }
+.step-icon { width: 56px; height: 56px; border-radius: 50%; background: #fdecea; color: var(--mc-red);
+             display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+.auth-page { min-height: 100vh; background: #f5f7fb; }
+.auth-card { max-width: 560px; }
+.error-code { font-size: 5rem; font-weight: 700; color: var(--mc-red); }

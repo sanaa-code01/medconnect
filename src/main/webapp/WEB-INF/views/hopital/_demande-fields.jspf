@@ -1,0 +1,29 @@
+<%-- Champs communs aux formulaires de création et de modification ; "f" = valeurs à afficher --%>
+<div class="row">
+    <div class="col-md-3 mb-3">
+        <label class="form-label" for="groupeSanguin">Groupe sanguin</label>
+        <select class="form-select" id="groupeSanguin" name="groupeSanguin" required>
+            <option value="">Choisir…</option>
+            <c:forEach var="g" items="${groupes}">
+                <option value="${g}" ${fGroupe == g.name() ? 'selected' : ''}>${g.label}</option>
+            </c:forEach>
+        </select>
+    </div>
+    <div class="col-md-3 mb-3">
+        <label class="form-label" for="quantite">Poches nécessaires</label>
+        <input class="form-control" type="number" id="quantite" name="quantite" min="1" max="${quantiteMax}"
+               value="${fn:escapeXml(fQuantite)}" required>
+    </div>
+    <div class="col-md-3 mb-3">
+        <label class="form-label" for="urgence">Urgence</label>
+        <select class="form-select" id="urgence" name="urgence" required>
+            <c:forEach var="u" items="${urgences}">
+                <option value="${u}" ${fUrgence == u.name() ? 'selected' : ''}>${u.label}</option>
+            </c:forEach>
+        </select>
+    </div>
+    <div class="col-12 mb-3">
+        <label class="form-label" for="description">Description (service, contexte…)</label>
+        <textarea class="form-control" id="description" name="description" rows="2" maxlength="500"><c:out value="${fDescription}"/></textarea>
+    </div>
+</div>
